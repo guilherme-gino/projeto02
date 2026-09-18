@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #D7CFCA;
+    font-family: 'Montserrat', sans-serif;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+
+
+
+    header{
+        height: 80px;
+        background-color: rgb(187, 178, 173);
+        display: flex;
+        align-items: center;
+        padding-left: 50px;
+        
+    }
+
+    
+
+    main{
+        margin: 50px;
+        display: grid;
+        grid-template-rows: 100px 100px auto;
+        /* place-items: center; */
+        padding-left: 50px;
+        
+
+
+        .box{
+            .label{
+            font-size: 20px;
+            }
+
+            .input{
+                margin-top: 5px;
+
+                .box_input{
+                    width: 500px;
+                    height: 40px;
+                    border-radius: 12px;
+                    border: none;
+                    padding: 10px;
+                }
+
+                .box_input::placeholder{
+                    padding: 10px;
+                    font-size: 14px;
+                }
+                
+            }
+
+            .select{
+                margin-top: 5px;
+                
+                .select_type{
+                    width: 500px;
+                    height: 40px;
+                    border-radius: 12px;
+                    border: none;
+                    padding: 10px;
+                }
+
+            }
+        }
+        
+
+        .resultados{
+            display: grid;
+            grid-template-rows: auto 1fr;
+            font-size: 20px;
+
+            .box_cards{
+                background-color: #fff;
+                margin-top: 15px;
+                border-radius: 24px;
+                padding: 24px;
+                font-size: 16px;
+                display: grid;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1f 1f 1f 1f 1fr 1fr;
+                gap: 10px;
+
+                .cards{
+                    padding: 10px;
+                    background-color: #e4e4e4;
+                    border-radius: 12px;
+                }
+            }
+        }
+    }
+
+
+
+    footer{
+        height: 100px;
+        display: grid;
+        place-items: center center;
+        background-color: rgb(187, 178, 173);
+
+        h3{
+            font-weight: 400;
+        }
+    }
+
+}
+
+
+
+
